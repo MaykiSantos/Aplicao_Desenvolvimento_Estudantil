@@ -29,7 +29,7 @@ class DesempenhoIndividualViews {
 
     <div class="card w-100 my-2"> <!-- card grafico -->
       <div class="card-body">
-        <h5 id="nome-matéria" class="card-tilhe">Nome da Matéria</h5>
+        <h5 id="nome-matéria" class="card-tilhe">Click em umas das linhas da tabla para visualizar uma grafico teralhado</h5>
         <div class="ct-chart ct-menor-sexto" id="grafico-materia"></div><!-- Grafico barra da matéria selecionada -->
       </div>
     </div><!-- Fim card grafico -->

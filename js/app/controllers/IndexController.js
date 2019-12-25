@@ -1,7 +1,7 @@
 //VARIAVEIS GLOBAIS
 var materias = ['Matématica', 'Portugues', 'História', 'Geografia', 'Filosofia', 'Sociologia', 'Ciencias', 'Quimica', 'Fisica', 'Biologia'];
 var alunoMayki = {
-  "nome": "Mayki",
+  "nome": "Mayki dos Santos Oliveira",
   "materias":[
     {
     "Materia":"Matématica",
