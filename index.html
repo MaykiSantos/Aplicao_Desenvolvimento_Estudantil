@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Biblioteca graficos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+    <!-- CSS proprio -->
+    <link rel="stylesheet" href="css\estilos.css">
+    
+    <title>Cadastro de Alunos</title>
+
+  </head>
+  <body>
+
+    <nav class="navbar navbar-light bg-dark">
+      <a class="navbar-brand text-light" href="#">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/76/Slack_Icon.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        Cadastro de Alunos
+      </a>
+    </nav>
+
+    <div class="container-fluid my-2">
+      <div class="row">
+        <div class="col-2"> <!-- menu lateral esquerda -->
+
+          <div class="list-group">
+            <div class="list-group-item bg-dark text-white center" align="center"><h5 class="mx-auto">Menu lateral</h5></div>
+            <a href="#" id="item1" class="list-group-item list-group-item-action">Alunos Cadastrados</a>
+            <a href="#" id="item2" class="list-group-item list-group-item-action ">Cadastrar Aluno</a>
+            <a href="#" id="item3" class="list-group-item list-group-item-action">Média Geral</a>
+            <a href="#" id="item4" class="list-group-item list-group-item-action">Outra opção</a>
+          </div>
+
+        </div><!-- Fim menu lateral -->
+        <div class="col-10" id="conteudo-index"> <!-- conteudo lateral direita -->
+
+
+          <div class="mx-auto">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/76/Slack_Icon.png" alt="" width="30%" class="rounded mx-auto d-block mt-5">
+            <h5 class="text-center">Graficos de Desemvolvimento Estudantil</h5>
+          </div>
+
+
+
+
+        </div><!-- Fim conteudo lateral direita -->
+
+      </div>
+    </div>
+
+
+
+
+<!-- Script Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.4.1.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<!-- Script Graficos -->
+<script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+<!-- scripts da pagina -->
+<!--<script src="teste.js"></script>-->
+<script src="js\app\help\Help.js"></script>
+<script src="js\app\models\AlunosModels.js"></script>
+<script src="js\app\models\CriaMateriaModels.js"></script>
+<script src="js\app\controllers\CadastraAlunoController.js"></script>
+<script src="js\app\controllers\AlunosCadastradosController.js"></script>
+<script src="js\app\controllers\IndexController.js"></script>
+<script src="js\app\controllers\DesempenhoIndividualController.js"></script>
+<script src="js\app\controllers\MediaGeralController.js"></script>
+<script src="js\app\views\CadastraAlunosViews.js"></script>
+<script src="js\app\views\AlunosCadastradosViews.js"></script>
+<script src="js\app\views\MediaGeralViews.js"></script>
+<script src="js\app\views\DesempenhoIndividualViews.js"></script>
+
+
+
+
+
+  </body>
+</html>

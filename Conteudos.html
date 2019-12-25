@@ -1,0 +1,156 @@
+<!--****************************** VIEW ALUNOS CADASTRADOS ******************************-->
+
+<div class="col-10" <!-- conteudo lateral direita -->
+
+  <div class="row"> <!-- Alunos Cadastrados -->
+    <div class="card w-25"><!-- card do aluno -->
+      <img class="card-img-top" src="img\img-cards.svg" alt="Imagem de capa do card">
+      <div class="card-body">
+        <h5 class="card-title">Nome do Aluno</h5>
+        <p class="card-text">descricao do aluno</p>
+      </div>
+      <div class="card-footer" align='center'>
+        <a href="#" class="btn btn-primary botao-desempenho">Desempenho</a>
+        <a href="#" class="btn btn-primary botao-excluir">Excluir</a>
+      </div>
+    </div> <!-- Fim card do aluno -->
+  </div> <!-- Fim Alunos Cadastrados -->
+
+</div><!-- Fim conteudo lateral direita -->
+
+
+
+<!--****************************** VIEW TABELA ALUNO ******************************-->
+
+<table class="table table-bordered table-hover" id="tabela-aluno" > <!-- Tabela Aluno -->
+  <thead class="thead-dark" align='center'>
+    <tr>
+      <th scope="col">MATERIAS</th>
+      <th scope="col">1º Ano Fun.</th>
+      <th scope="col">2º Ano Fun.</th>
+      <th scope="col">3º Ano Fun.</th>
+      <th scope="col">4º Ano Fun.</th>
+      <th scope="col">5º Ano Fun.</th>
+      <th scope="col">6º Ano Fun.</th>
+      <th scope="col">7º Ano Fun.</th>
+      <th scope="col">8º Ano Fun.</th>
+      <th scope="col">9º Ano Fun.</th>
+      <th scope="col">1º Ano Med.</th>
+      <th scope="col">2º Ano Med.</th>
+      <th scope="col">3º Ano Med.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Geografia</th>
+      <td>7.0</td>
+      <td>6.9</td>
+      <td>9.8</td>
+      <td>8.8</td>
+      <td>7.9</td>
+      <td>9.2</td>
+      <td>5.8</td>
+      <td>8.3</td>
+      <td>6.7</td>
+      <td>7.8</td>
+      <td>8.0</td>
+      <td>9.1</td>
+    </tr>
+  </tbody>
+</table> <!-- Fim Tabela Aluno -->
+
+<div class="card w-100 my-2"> <!-- card grafico -->
+  <div class="card-body">
+    <h5 class="card-tilhe">Nome da Matéria</h5>
+    <div class="ct-chart ct-menor-sexto" id="grafico-materia"></div><!-- Grafico barra da matéria selecionada -->
+  </div>
+</div><!-- Fim card grafico -->
+
+<div class="card w-100 my-2"> <!-- card grafico -->
+  <div class="card-body">
+    <h5 class="card-tilhe">Media Geral</h5>
+    <div class="ct-chart ct-menor-sexto" id="grafico-geral"></div><!-- Grafico linha da media geral por ano -->
+  </div>
+</div><!-- Fim card grafico -->
+
+
+
+<!--****************************** MEDIA GERAL DAS MATERIAS ******************************-->
+
+<div class="card w-100 my-2"> <!-- card grafico -->
+  <div class="card-body">
+    <h4 class="card-tilhe">DESEMPENHO GERAL DOS ALUNOS POR MATÉRIA</h4>
+    <div class="ct-chart ct-menor-sexto" id="grafico-geral-materias"></div><!-- Grafico barra da media geral por materia(considera todos os alunos) -->
+  </div>
+</div><!-- Fim card grafico -->
+
+
+<!--****************************** VIEW CADASTRAR NOVO ALUNO ******************************-->
+
+<input class="form-control form-control-lg" type="text" placeholder="Nome do Aluno Aqui!"> <!-- Input nome aluno -->
+
+<table class="table table-bordered mt-2" id="tabela-aluno" > <!-- Tabela Cadastrar Aluno -->
+  <thead class="thead-dark" align='center'>
+    <tr>
+      <th scope="col">MATERIAS</th>
+      <th scope="col">1º Ano Fun.</th>
+      <th scope="col">2º Ano Fun.</th>
+      <th scope="col">3º Ano Fun.</th>
+      <th scope="col">4º Ano Fun.</th>
+      <th scope="col">5º Ano Fun.</th>
+      <th scope="col">6º Ano Fun.</th>
+      <th scope="col">7º Ano Fun.</th>
+      <th scope="col">8º Ano Fun.</th>
+      <th scope="col">9º Ano Fun.</th>
+      <th scope="col">1º Ano Med.</th>
+      <th scope="col">2º Ano Med.</th>
+      <th scope="col">3º Ano Med.</th>
+    </tr>
+  </thead>
+  <tbody id="tabela-cadastro">
+    <tr>
+      <th scope="row">Geografia</th>
+      <td><input class="form-control form-control-sm" type="number" value="0" min="0" max="10"></td>
+      <td><input class="form-control form-control-sm" type="number" value="0" min="0" max="10"></td>
+      <td><input class="form-control form-control-sm" type="number" value="0" min="0" max="10"></td>
+      <td><input class="form-control form-control-sm" type="number" value="0" min="0" max="10"></td>
+      <td><input class="form-control form-control-sm" type="number" value="0" min="0" max="10"></td>
+      <td><input class="form-control form-control-sm" type="number" value="0" min="0" max="10"></td>
+      <td><input class="form-control form-control-sm" type="number" value="0" min="0" max="10"></td>
+      <td><input class="form-control form-control-sm" type="number" value="0" min="0" max="10"></td>
+      <td><input class="form-control form-control-sm" type="number" value="0" min="0" max="10"></td>
+      <td><input class="form-control form-control-sm" type="number" value="0" min="0" max="10"></td>
+      <td><input class="form-control form-control-sm" type="number" value="0" min="0" max="10"></td>
+      <td><input class="form-control form-control-sm" type="number" value="0" min="0" max="10"></td>
+    </tr>
+  </tbody>
+</table> <!-- Fim Tabela Cadastrar Aluno -->
+
+<button type="submit" name="button" class="btn btn-primary mb-3 col-5" id="botaoCadastrar">Cadastrar</button> <!-- botão cadastra -->
+<br>
+<br>
+<!-- FUNÇÃO QUE REPLICA OS INPUTS -->
+
+<!-- function criaTabelaInput() {
+  var materias = ['Matématica', 'Portugues', 'História', 'Geografia', 'Filosofia', 'Sociologia', 'Ciencias', 'Quimica', 'Fisica', 'Biologia'];
+
+  materias.forEach(function(item) {
+    let linhaTabela = `<tr>
+      <th scope="row">${item}</th>
+      <td><input class="form-control form-control-sm" type="number" value="0" min="0" max="10"></td>
+      <td><input class="form-control form-control-sm" type="number" value="0" min="0" max="10"></td>
+      <td><input class="form-control form-control-sm" type="number" value="0" min="0" max="10"></td>
+      <td><input class="form-control form-control-sm" type="number" value="0" min="0" max="10"></td>
+      <td><input class="form-control form-control-sm" type="number" value="0" min="0" max="10"></td>
+      <td><input class="form-control form-control-sm" type="number" value="0" min="0" max="10"></td>
+      <td><input class="form-control form-control-sm" type="number" value="0" min="0" max="10"></td>
+      <td><input class="form-control form-control-sm" type="number" value="0" min="0" max="10"></td>
+      <td><input class="form-control form-control-sm" type="number" value="0" min="0" max="10"></td>
+      <td><input class="form-control form-control-sm" type="number" value="0" min="0" max="10"></td>
+      <td><input class="form-control form-control-sm" type="number" value="0" min="0" max="10"></td>
+      <td><input class="form-control form-control-sm" type="number" value="0" min="0" max="10"></td>
+    </tr>;`
+    console.log(linhaTabela);
+    $('#tabela-cadastro').append(linhaTabela);
+    //Adicionar os identificadores ID em cada um dos inputs(#Geografia-Ano7Fund).
+  }); -->
