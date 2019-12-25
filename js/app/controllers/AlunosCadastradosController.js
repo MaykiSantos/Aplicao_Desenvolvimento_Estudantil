@@ -19,20 +19,9 @@ static _desempenhoIndividual(){
   DesempenhoIndividualController.montaTabelaDesempenho();
   $('tr').on('click', DesempenhoIndividualController.montaGraficoDesempenho);
 
-
-
-
   console.log(listaAlunos[identificador].materias);
 
 
 }
-
-
-
-
-
-
-
-
 
 }//fim class

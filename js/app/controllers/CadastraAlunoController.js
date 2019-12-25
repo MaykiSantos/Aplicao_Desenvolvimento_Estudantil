@@ -28,12 +28,7 @@ static _criaAluno(){
   });
   console.log(criaAluno);
   listaAlunos.push(criaAluno);
-
-
-
 }
-
-
 
 
 }//fim class

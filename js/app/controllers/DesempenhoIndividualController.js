@@ -24,9 +24,6 @@ class DesempenhoIndividualController {
       $('#tabela-desempenho').append(linhaTabelaDesesempenho);
     });
 
-
-
-
     let aluno = listaAlunos[identificador];
     let listaMediaIndividual = [];
     aluno.materias.forEach(function (item) {
@@ -86,7 +83,6 @@ class DesempenhoIndividualController {
       listaMediaIndividual.push(total/dividir);
       console.log(listaMediaIndividual);
 
-
     })
 
     new Chartist.Bar('#grafico-geral', {
@@ -98,10 +94,6 @@ class DesempenhoIndividualController {
     height: '350px',
     distributeSeries: true
   });
-
-
-
-
 
   }
 
@@ -127,12 +119,6 @@ static montaGraficoDesempenho(){
   });
 
 
-
-
-
-
-  //$('#nome-matéria').text(trGrafi);
 }
-
 
 }//fim class

@@ -30,9 +30,4 @@ class AlunosCadastradosViews {
   }
 
 
-
-
-
-
-
 }//fim class

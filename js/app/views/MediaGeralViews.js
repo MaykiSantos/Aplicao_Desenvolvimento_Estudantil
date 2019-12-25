@@ -15,9 +15,4 @@ class MediaGeralViews {
   }
 
 
-
-
-
-
-
 }//fim class
