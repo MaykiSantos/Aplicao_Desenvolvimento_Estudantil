@@ -2,8 +2,8 @@ class AlunosCadastradosController {
   constructor() {
   }
 
-static _deletaAluno(){
-
+static _deletaAluno(event){
+  event.preventDefault();
   identificador = $(this).parent().parent().find('#identificador').text()
   console.log(identificador);
   listaAlunos.splice(identificador,1);
@@ -13,6 +13,7 @@ static _deletaAluno(){
 }
 
 static _desempenhoIndividual(){
+  
   identificador = $(this).parent().parent().find('#identificador').text()
   Help.limpaTela();
   DesempenhoIndividualViews._estruturaTabela();
