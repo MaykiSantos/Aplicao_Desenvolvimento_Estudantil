@@ -8,7 +8,8 @@ $(function () {
 
 });
 /*Opção "Alunos Cadastrados"*/
-$('#item1').on('click', function(){
+$('#item1').on('click', function(event){
+  event.preventDefault();
   $('#item1').addClass('active');
   $('#item2').removeClass('active');
   $('#item3').removeClass('active');
@@ -21,7 +22,8 @@ $('#item1').on('click', function(){
 });
 
 /*Opção "Cadastrar Aluno"*/
-$('#item2').on('click', function(){
+$('#item2').on('click', function(event){
+  event.preventDefault();
   $('#item2').addClass('active');
   $('#item1').removeClass('active');
   $('#item3').removeClass('active');
@@ -32,7 +34,8 @@ $('#item2').on('click', function(){
 });
 
 /*Opção "Media Geral"*/
-$('#item3').on('click', function(){
+$('#item3').on('click', function(event){
+  event.preventDefault();
   $('#item3').addClass('active');
   $('#item1').removeClass('active');
   $('#item2').removeClass('active');
@@ -43,7 +46,8 @@ $('#item3').on('click', function(){
 });
 
 /*Opção "Outra Opção"*/
-$('#item4').on('click', function(){
+$('#item4').on('click', function(event){
+  event.preventDefault();
   $('#item4').addClass('active');
   $('#item1').removeClass('active');
   $('#item2').removeClass('active');
